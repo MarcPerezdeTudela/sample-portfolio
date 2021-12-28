@@ -1,10 +1,18 @@
 module.exports = {
-  content: ["./components/**/*.tsx", "./pages/**/*.tsx", "./public/**/*.html"],
+  content: ['./components/**/*.tsx', './pages/**/*.tsx', './public/**/*.html'],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#30475E',
+        secondary: '#F05454',
+        primaryText: '#DDDDDD',
+      },
+      keyframes: {},
+      animation: {},
+    },
   },
   variants: {
     extend: {},
   },
   plugins: [],
-};
+}
