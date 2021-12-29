@@ -4,9 +4,9 @@ import TextCarousel from '../TextCarousel'
 
 const HeroSection = () => {
   return (
-    <section className="flex h-min flex-col pt-6 px-4 pr-6">
+    <section className="flex h-min flex-col pt-8 px-4 pr-6 pb-28">
       <h1 className="text-secondary font-title text-5xl font-semibold">
-        Portfolio Name
+        John Doe
       </h1>
       <h2 className="text-primaryText font-title text-4xl font-semibold pt-2">
         Front End Developer

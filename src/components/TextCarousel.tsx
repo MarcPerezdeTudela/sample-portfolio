@@ -9,7 +9,7 @@ const TextCarousel = () => {
   useEffect(() => {
     setInterval(() => {
       setIsMoving(true)
-    }, 3000)
+    }, 4000)
   }, [])
   return (
     <>
