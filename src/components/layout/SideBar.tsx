@@ -15,7 +15,7 @@ const SideBar: React.FunctionComponent = () => {
   const logoSize = 42
 
   return (
-    <nav className="row-span-2 col-span-2 bg-primary">
+    <nav className="row-span-2 col-span-2">
       <div className="flex flex-col h-screen justify-between items-center sticky top-0">
         <div className="pt-8 pb-4 transition transform duration-300 hover:cursor-pointer hover:-translate-y-1 hover:scale-125">
           <SiJavascript className="fill-secondary" size={logoSize} />

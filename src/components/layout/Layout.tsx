@@ -7,9 +7,9 @@ interface LayoutProps {
 
 const Layout: React.FunctionComponent = ({ children }: LayoutProps) => {
   return (
-    <div className="grid grid-cols-10 ">
+    <div className="bg-primary grid grid-cols-12 ">
       <SideBar />
-      <main className="h-screen col-span-8">{children}</main>
+      <main className="flex flex-col h-screen col-span-10">{children}</main>
       <Footer />
     </div>
   )

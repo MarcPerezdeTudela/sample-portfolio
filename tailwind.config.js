@@ -9,6 +9,10 @@ module.exports = {
       },
       keyframes: {},
       animation: {},
+
+      fontFamily: {
+        title: ['Source Sans Pro'],
+      },
     },
   },
   variants: {
