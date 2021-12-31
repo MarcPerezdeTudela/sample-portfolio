@@ -11,16 +11,12 @@ import {
   SiTailwindcss,
 } from 'react-icons/si'
 import CustomLink from '../CustomLink'
+import SectionHeader from '../SectionHeader'
 
 const AboutSection = () => {
   return (
-    <section className="flex h-min flex-col pt-8 px-4 pr-6 text-primaryText">
-      <div className="flex h-full items-center">
-        <h4 className="font-title text-2xl text-secondary font-semibold whitespace-nowrap pr-2">
-          About <span className="text-secondary">Me</span>
-        </h4>
-        <span className="h-px w-full bg-primaryText/50" />
-      </div>
+    <section className="flex h-min flex-col px-4 pr-6 text-primaryText">
+      <SectionHeader title="About Me" />
       <div className="leading-relaxed text-sm">
         <p className="py-2 pt-4">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}

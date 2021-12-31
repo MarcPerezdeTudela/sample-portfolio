@@ -11,10 +11,14 @@
   "dependencies": {
     "@headlessui/react": "^1.4.2",
     "@tailwindui/react": "^0.1.1",
+    "@types/react-headroom": "^2.2.2",
     "next": "12.0.7",
     "react": "17.0.2",
+    "react-awesome-reveal": "^3.8.1",
     "react-dom": "17.0.2",
-    "react-icons": "^4.3.1"
+    "react-headroom": "^3.2.0",
+    "react-icons": "^4.3.1",
+    "react-responsive-carousel": "^3.2.22"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.0.0",

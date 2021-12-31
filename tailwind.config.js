@@ -6,6 +6,7 @@ module.exports = {
         primary: '#30475E',
         secondary: '#F05454',
         primaryText: '#DDDDDD',
+        card: '#222831',
       },
       keyframes: {},
       animation: {},
