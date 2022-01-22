@@ -42,8 +42,8 @@ const JobCarousel = () => {
 
   const indicatorStyles: CSSProperties = {
     background: '#DDDDDD',
-    width: 8,
-    height: 8,
+    width: 10,
+    height: 10,
     display: 'inline-block',
     margin: '0 8px',
     borderRadius: '9999px',
@@ -54,7 +54,10 @@ const JobCarousel = () => {
       infiniteLoop={true}
       emulateTouch={true}
       showThumbs={false}
-      showArrows={false}
+      transitionTime={500}
+      preventMovementUntilSwipeScrollTolerance={true}
+      swipeScrollTolerance={30}
+      showArrows={true}
       renderIndicator={(onClickHandler, isSelected, index, label) => {
         if (isSelected) {
           return (
@@ -81,7 +84,7 @@ const JobCarousel = () => {
       }}
     >
       {jobs.map((job, index) => (
-        <div key={index} className="text-left mx-1">
+        <div key={index} className="cursor-grab text-left mx-1">
           <JobCard
             companyName={job.companyName}
             jobName={job.jobName}

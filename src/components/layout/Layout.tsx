@@ -7,9 +7,9 @@ interface LayoutProps {
 
 const Layout: React.FunctionComponent = ({ children }: LayoutProps) => {
   return (
-    <div className="bg-primary">
+    <div className="bg-primary py-4">
       <Navbar />
-      <main className="px-4">{children}</main>
+      <main className="px-8 pr-6">{children}</main>
       <Footer />
     </div>
   )
