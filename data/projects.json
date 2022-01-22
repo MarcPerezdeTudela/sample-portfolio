@@ -1,0 +1,30 @@
+[
+  {
+    "projectName": "Project #1",
+    "projectSubtitle": "Subtitle #1",
+    "projectDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.",
+    "tags": ["react", "javascript", "nextJS"],
+    "imgLink": "projectsImages/code.jpg"
+  },
+  {
+    "projectName": "Project #2",
+    "projectSubtitle": "Subtitle #2",
+    "projectDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.",
+    "tags": ["html5", "css", "tailwind", "javascript"],
+    "imgLink": "projectsImages/student.jpg"
+  },
+  {
+    "projectName": "Project #3",
+    "projectSubtitle": "Subtitle #3",
+    "projectDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.",
+    "tags": ["react", "css", "javascript"],
+    "imgLink": "projectsImages/fractal.jpg"
+  },
+  {
+    "projectName": "Project #4",
+    "projectSubtitle": "Subtitle #4",
+    "projectDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.",
+    "tags": ["security", "SASS", "python", "fastAPI"],
+    "imgLink": "projectsImages/fingerPrint.jpg"
+  }
+]

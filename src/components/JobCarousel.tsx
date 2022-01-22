@@ -3,43 +3,19 @@ import { Carousel } from 'react-responsive-carousel'
 import JobCard from './JobCard'
 import { CSSProperties } from 'react'
 
-const JobCarousel = () => {
-  const jobs = [
-    {
-      companyName: 'Company #1',
-      jobName: 'Job Name',
-      firstYear: 2010,
-      lastYear: 2015,
-      tasks: [
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut laoreet tortor.',
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed tortor ut.',
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus finibus fringilla vestibulum. ',
-      ],
-    },
-    {
-      companyName: 'Company #2',
-      jobName: 'Job Name 2',
-      firstYear: 2015,
-      lastYear: 2018,
-      tasks: [
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut laoreet tortor.',
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed tortor ut.',
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus finibus fringilla vestibulum. ',
-      ],
-    },
-    {
-      companyName: 'Company #3',
-      jobName: 'Job Name 3',
-      firstYear: 2018,
-      lastYear: 2020,
-      tasks: [
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut laoreet tortor.',
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed tortor ut.',
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus finibus fringilla vestibulum. ',
-      ],
-    },
-  ]
+interface Job {
+  companyName: string
+  jobName: string
+  firstYear: number
+  lastYear: number
+  tasks: string[]
+}
 
+interface JobCarouselProps {
+  data: Job[]
+}
+
+const JobCarousel = ({ data }: JobCarouselProps) => {
   const indicatorStyles: CSSProperties = {
     background: '#DDDDDD',
     width: 10,
@@ -83,7 +59,7 @@ const JobCarousel = () => {
         )
       }}
     >
-      {jobs.map((job, index) => (
+      {data.map((job, index) => (
         <div key={index} className="cursor-grab text-left mx-1">
           <JobCard
             companyName={job.companyName}

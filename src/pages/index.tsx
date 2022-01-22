@@ -20,7 +20,7 @@ const Home: NextPage = () => {
       <Fade direction="up" triggerOnce={true} fraction={0.25}>
         <JobsSection />
       </Fade>
-      <Fade direction="up" triggerOnce={true} fraction={0.25}>
+      <Fade direction="up" triggerOnce={true} fraction={0.1}>
         <ProjectsSection />
       </Fade>
     </div>
