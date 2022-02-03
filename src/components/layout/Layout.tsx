@@ -7,7 +7,7 @@ interface LayoutProps {
 
 const Layout: React.FunctionComponent = ({ children }: LayoutProps) => {
   return (
-    <div className="bg-primary py-4">
+    <div className="bg-primary">
       <Navbar />
       <main className="px-8 pr-6">{children}</main>
       <Footer />
