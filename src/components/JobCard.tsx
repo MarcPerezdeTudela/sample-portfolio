@@ -1,5 +1,5 @@
 import { MdOutlineWork } from 'react-icons/md'
-interface JobCardProps {
+interface Props {
   companyName: string
   jobName: string
   firstYear: number
@@ -12,7 +12,7 @@ const JobCard = ({
   firstYear,
   lastYear,
   tasks,
-}: JobCardProps) => {
+}: Props) => {
   return (
     <div className="w-full bg-card rounded-md shadow-xl">
       <div className="bg-[url('../public/floating-cogs.svg')] py-6 px-6">

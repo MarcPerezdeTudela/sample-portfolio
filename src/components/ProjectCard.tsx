@@ -1,4 +1,4 @@
-interface ProjectCardProps {
+interface Props {
   projectName: string
   projectSubtitle: string
   projectDescription: string
@@ -11,7 +11,7 @@ const ProjectCard = ({
   projectDescription,
   tags,
   imgLink,
-}: ProjectCardProps) => {
+}: Props) => {
   return (
     <div
       style={{ backgroundImage: `url('${imgLink}')` }}

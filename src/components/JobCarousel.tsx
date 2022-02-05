@@ -11,11 +11,11 @@ interface Job {
   tasks: string[]
 }
 
-interface JobCarouselProps {
+interface Props {
   data: Job[]
 }
 
-const JobCarousel = ({ data }: JobCarouselProps) => {
+const JobCarousel = ({ data }: Props) => {
   const indicatorStyles: CSSProperties = {
     background: '#DDDDDD',
     width: 10,
