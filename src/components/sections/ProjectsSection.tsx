@@ -5,7 +5,7 @@ const ProjectsSection = () => {
   const projects = data
 
   return (
-    <section>
+    <section id="projects-section">
       <SectionHeader title="Projects" />
       <div className="grid h-min grid-cols-1 gap-8 justify-items-center my-8">
         {projects.map((project, index) => {

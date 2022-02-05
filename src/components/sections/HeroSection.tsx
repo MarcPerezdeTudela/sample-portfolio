@@ -5,7 +5,7 @@ import { Fade } from 'react-awesome-reveal'
 
 const HeroSection = () => {
   return (
-    <section className="flex h-mim flex-col pt-8 pb-16">
+    <section id="hero-section" className="flex h-mim flex-col pt-8 pb-16">
       <Fade direction="up" cascade={true} triggerOnce={true}>
         <h1 className="text-secondary font-title text-5xl font-semibold">
           John Doe

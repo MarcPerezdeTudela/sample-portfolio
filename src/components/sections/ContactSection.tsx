@@ -12,7 +12,10 @@ import SocialMediaIcon from '../SocialMediaIcon'
 const ContactSection = () => {
   const iconSize = 36
   return (
-    <section className="flex h-min flex-col text-primaryText">
+    <section
+      id="contact-section"
+      className="flex h-min flex-col text-primaryText"
+    >
       <SectionHeader title="Contact Me" />
       <div className="flex flex-col items-center">
         <p className="font-semibold pt-6">You can find me in my social media</p>

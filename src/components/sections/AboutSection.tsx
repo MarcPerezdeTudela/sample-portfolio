@@ -15,7 +15,10 @@ import SectionHeader from '../SectionHeader'
 
 const AboutSection = () => {
   return (
-    <section className="flex h-min flex-col text-primaryText">
+    <section
+      id="about-section"
+      className="flex h-min flex-col text-primaryText"
+    >
       <SectionHeader title="About Me" />
       <div className="leading-relaxed text-sm">
         <p className="py-2 pt-4">

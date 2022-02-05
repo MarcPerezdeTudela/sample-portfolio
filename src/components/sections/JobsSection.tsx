@@ -4,7 +4,10 @@ import data from '@/data/jobs.json'
 
 const JobsSection = () => {
   return (
-    <section className="grid h-min grid-cols-1 gap-8 text-primaryText bg-transparent overflow-hidden">
+    <section
+      id="jobs-section"
+      className="grid h-min grid-cols-1 gap-8 text-primaryText bg-transparent overflow-hidden"
+    >
       <SectionHeader title="Jobs" />
       <JobCarousel data={data} />
     </section>
