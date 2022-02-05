@@ -3,20 +3,14 @@ import React, { Dispatch, SetStateAction } from 'react'
 
 interface Props {
   setOpen: Dispatch<SetStateAction<boolean>>
+  sections: string[]
+  links: string[]
 }
-const items = ['Home', 'About Me', 'Jobs', 'Projects', 'Contact Me']
-const links = [
-  '',
-  'about-section',
-  'jobs-section',
-  'projects-section',
-  'contact-section',
-]
 
-const NavbarMobileMenu = ({ setOpen }: Props) => {
+const NavbarMobileMenu = ({ setOpen, sections, links }: Props) => {
   return (
     <ul className="absolute bg-card w-full pb-8 z-10 ">
-      {items.map((item, index) => {
+      {sections.map((section, index) => {
         return (
           <Link key={index} passHref={true} href={`#${links[index]}`}>
             <li
@@ -25,7 +19,7 @@ const NavbarMobileMenu = ({ setOpen }: Props) => {
               }}
               className=" transition-colors duration-200 px-4 py-6 text-primaryText text-center font-semibold hover:cursor-pointer hover:text-secondary"
             >
-              {item}
+              {section}
             </li>
           </Link>
         )

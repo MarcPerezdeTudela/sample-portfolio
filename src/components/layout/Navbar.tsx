@@ -57,7 +57,7 @@ const Navbar = () => {
         enterFrom="-translate-y-12 opacity-0"
         enterTo="translate-y-0 opacity-100"
       >
-        <NavbarMobileMenu setOpen={setOpen} />
+        <NavbarMobileMenu sections={sections} links={links} setOpen={setOpen} />
       </Transition>
       <Transition
         show={open}
