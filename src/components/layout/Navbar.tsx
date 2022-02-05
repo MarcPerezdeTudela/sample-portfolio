@@ -5,11 +5,21 @@ import { useDisableBodyScroll } from 'src/hooks/useDisableBodyScroll'
 import Headroom from 'react-headroom'
 import Hamburger from 'hamburger-react'
 import NavbarMobileMenu from './NavbarMobileMenu'
+import NavbarLinksPanel from './NavbarLinksPanel'
 
 const Navbar = () => {
   const [shadow, setShadow] = useState(false)
   const [open, setOpen] = useState(false)
   useDisableBodyScroll(open)
+
+  const sections = ['Home', 'About Me', 'Jobs', 'Projects', 'Contact Me']
+  const links = [
+    '',
+    'about-section',
+    'jobs-section',
+    'projects-section',
+    'contact-section',
+  ]
 
   return (
     <Headroom
@@ -25,12 +35,17 @@ const Navbar = () => {
       }}
     >
       <nav
-        className={`h-min px-8 py-8 flex justify-between z-50 transition-all duration-200 items-center ${
+        className={`h-min px-12 md:px-20 py-8 flex justify-between z-50 transition-all duration-200 items-center ${
           shadow ? 'shadow-xl' : 'shadow-none'
         } ${open ? 'bg-card' : 'bg-primary/[.90]'}`}
       >
         <SiJavascript className="fill-secondary" size={48} />
-        <Hamburger toggled={open} toggle={setOpen} color="#F05454" />
+        <div className="md:hidden">
+          <Hamburger toggled={open} toggle={setOpen} color="#F05454" />
+        </div>
+        <div className="hidden w-full justify-end md:flex">
+          <NavbarLinksPanel sections={sections} links={links} />
+        </div>
       </nav>
 
       <Transition
