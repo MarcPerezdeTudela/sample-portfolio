@@ -1,4 +1,5 @@
 import AboutSection from '@/components/sections/AboutSection'
+import ContactSection from '@/components/sections/ContactSection'
 import HeroSection from '@/components/sections/HeroSection'
 import JobsSection from '@/components/sections/JobsSection'
 import ProjectsSection from '@/components/sections/ProjectsSection'
@@ -22,6 +23,9 @@ const Home: NextPage = () => {
       </Fade>
       <Fade direction="up" triggerOnce={true} fraction={0.1}>
         <ProjectsSection />
+      </Fade>
+      <Fade direction="up" triggerOnce={true} fraction={0.25}>
+        <ContactSection />
       </Fade>
     </div>
   )
