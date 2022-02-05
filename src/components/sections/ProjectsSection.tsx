@@ -7,7 +7,7 @@ const ProjectsSection = () => {
   return (
     <section id="projects-section">
       <SectionHeader title="Projects" />
-      <div className="grid h-min grid-cols-1 gap-8 justify-items-center mt-8">
+      <div className="grid h-min grid-cols-1 lg:grid-cols-2 gap-8 justify-items-center mt-8">
         {projects.map((project, index) => {
           return (
             <ProjectCard

@@ -17,7 +17,7 @@ const ProjectCard = ({
       style={{ backgroundImage: `url('${imgLink}')` }}
       className={`rounded-md transition-all duration-700 cursor-pointer max-w-sm bg-cover bg-center hover:translate-y-1 hover:scale-110`}
     >
-      <div className="rounded bg-card/[.90] overflow-hidden shadow-lg hover:bg-card/[.70] transition-all duration-1000">
+      <div className="rounded bg-card/[.90] h-full overflow-hidden shadow-lg hover:bg-card/[.70] transition-all duration-1000">
         <div className="px-6 py-6 ">
           <h5 className="font-bold text-xl text-secondary mb-2">
             {projectName}

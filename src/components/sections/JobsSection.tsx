@@ -6,7 +6,7 @@ const JobsSection = () => {
   return (
     <section
       id="jobs-section"
-      className="grid h-min grid-cols-1 gap-8 text-primaryText bg-transparent overflow-hidden"
+      className="grid h-min grid-cols-1 gap-8 text-primaryText bg-transparent overflow-hidden max-w-xl"
     >
       <SectionHeader title="Jobs" />
       <JobCarousel data={data} />

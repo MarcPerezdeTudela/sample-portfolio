@@ -14,7 +14,7 @@ const JobCard = ({
   tasks,
 }: Props) => {
   return (
-    <div className="w-full bg-card rounded-md shadow-xl">
+    <div className="w-full bg-card rounded-md shadow-xl max-w-lg">
       <div className="bg-[url('../public/floating-cogs.svg')] py-6 px-6">
         <div className="flex justify-between items-center w-full">
           <div>

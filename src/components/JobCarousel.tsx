@@ -60,7 +60,10 @@ const JobCarousel = ({ data }: Props) => {
       }}
     >
       {data.map((job, index) => (
-        <div key={index} className="cursor-grab text-left mx-1">
+        <div
+          key={index}
+          className="flex justify-center cursor-grab text-left mx-1"
+        >
           <JobCard
             companyName={job.companyName}
             jobName={job.jobName}
