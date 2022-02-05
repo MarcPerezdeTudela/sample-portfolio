@@ -4,6 +4,7 @@ import { Transition } from '@headlessui/react'
 import { useDisableBodyScroll } from 'src/hooks/useDisableBodyScroll'
 import Headroom from 'react-headroom'
 import Hamburger from 'hamburger-react'
+import NavbarMobileMenu from './NavbarMobileMenu'
 
 const Navbar = () => {
   const [shadow, setShadow] = useState(false)
@@ -41,23 +42,7 @@ const Navbar = () => {
         enterFrom="-translate-y-12 opacity-0"
         enterTo="translate-y-0 opacity-100"
       >
-        <ul className="absolute bg-card w-full pb-8 z-10 ">
-          <li className=" transition-colors duration-200 px-4 py-6 text-primaryText text-center font-semibold hover:cursor-pointer hover:text-secondary">
-            Home
-          </li>
-          <li className="transition-colors duration-200 px-4 py-6 text-primaryText text-center font-semibold hover:cursor-pointer hover:text-secondary">
-            About Me
-          </li>
-          <li className="transition-colors duration-200 px-4 py-6 text-primaryText text-center font-semibold hover:cursor-pointer hover:text-secondary">
-            Jobs
-          </li>
-          <li className=" transition-colors duration-200 px-4 py-6 text-primaryText text-center font-semibold hover:cursor-pointer hover:text-secondary">
-            Projects
-          </li>
-          <li className="transition-colors duration-200 px-4 py-6 text-primaryText text-center font-semibold hover:cursor-pointer hover:text-secondary">
-            Contact Me
-          </li>
-        </ul>
+        <NavbarMobileMenu setOpen={setOpen} />
       </Transition>
       <Transition
         show={open}
