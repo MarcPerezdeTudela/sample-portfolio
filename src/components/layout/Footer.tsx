@@ -6,7 +6,7 @@ const Footer = () => {
       <p className="text-primaryText">Created and designed by </p>
       <div className="flex justify-center justify-items-center items-center">
         <a
-          href="#"
+          href="https://github.com/MarcPerezdeTudela/"
           className="text-secondary whitespace-nowrap hover:underline flex justify-center justify-items-center items-center"
         >
           Marc Pérez de Tudela
