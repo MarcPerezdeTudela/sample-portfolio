@@ -11,7 +11,12 @@ const Home: NextPage = () => {
   return (
     <div className="grid grid-cols-1 gap-y-20 min-h-screen">
       <Head>
-        <title>Create Next App</title>
+        <title>Sample Portfolio</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta
+          name="description"
+          content="Sample portfolio to practise Nextjs and TailwindCSS"
+        ></meta>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <HeroSection />
