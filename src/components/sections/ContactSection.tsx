@@ -21,25 +21,25 @@ const ContactSection = () => {
         <p className="font-semibold pt-6">You can find me in my social media</p>
         <div className="grid grid-rows-2 grid-cols-3  gap-8 justify-items-center w-full py-8 px-8">
           <SocialMediaIcon mediaName={'Facebook'} link={'https://facebook.com'}>
-            <FaFacebook size={iconSize} />
+            <FaFacebook className="fill-secondary" size={iconSize} />
           </SocialMediaIcon>
           <SocialMediaIcon mediaName={'Twitter'} link={'https://twitter.com'}>
-            <FaTwitter size={iconSize} />
+            <FaTwitter className="fill-secondary" size={iconSize} />
           </SocialMediaIcon>
           <SocialMediaIcon mediaName={'Github'} link={'https://github.com'}>
-            <FaGithub size={iconSize} />
+            <FaGithub className="fill-secondary" size={iconSize} />
           </SocialMediaIcon>
           <SocialMediaIcon mediaName={'Linkedin'} link={'https://linkedin.com'}>
-            <FaLinkedin size={iconSize} />
+            <FaLinkedin className="fill-secondary" size={iconSize} />
           </SocialMediaIcon>
           <SocialMediaIcon mediaName={'Gmail'} link={'https://gmail.com'}>
-            <MdEmail size={iconSize} />
+            <MdEmail className="fill-secondary" size={iconSize} />
           </SocialMediaIcon>
           <SocialMediaIcon
             mediaName={'Instagram'}
             link={'https://instagram.com'}
           >
-            <FaInstagram size={iconSize} />
+            <FaInstagram className="fill-secondary" size={iconSize} />
           </SocialMediaIcon>
         </div>
       </div>

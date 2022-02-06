@@ -24,7 +24,7 @@ const HeroSection = () => {
           faucibus.
         </p>
         <a
-          className="flex whitespace-nowrap mt-12 bg-secondary/75 shadow-2xl font-semibold text-primaryText px-4 py-4 rounded-lg w-min"
+          className="flex whitespace-nowrap mt-12 bg-transparent border border-solid border-secondary shadow-2xl font-semibold text-secondary px-4 py-4 rounded-lg w-min"
           href="#"
         >
           Check my projects <AiOutlineGithub className="ml-4" size={26} />
