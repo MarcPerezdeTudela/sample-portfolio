@@ -40,7 +40,7 @@ const Navbar = () => {
         } ${open ? 'bg-card' : 'bg-primary/[.90]'}`}
       >
         <SiJavascript className="fill-secondary" size={48} />
-        <div aria-label="mobile navbar menu" className="md:hidden">
+        <div aria-label="menu" className="md:hidden">
           <Hamburger toggled={open} toggle={setOpen} color="#F05454" />
         </div>
         <div className="hidden w-full justify-end md:flex">
