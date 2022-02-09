@@ -1,4 +1,3 @@
-import { SiJavascript } from 'react-icons/si'
 import { useState } from 'react'
 import { Transition } from '@headlessui/react'
 import { useDisableBodyScroll } from 'src/hooks/useDisableBodyScroll'
@@ -6,6 +5,7 @@ import Headroom from 'react-headroom'
 import Hamburger from 'hamburger-react'
 import NavbarMobileMenu from './NavbarMobileMenu'
 import NavbarLinksPanel from './NavbarLinksPanel'
+import Logo from '@/components/Logo'
 
 const Navbar = () => {
   const [shadow, setShadow] = useState(false)
@@ -39,7 +39,7 @@ const Navbar = () => {
           shadow ? 'shadow-xl' : 'shadow-none'
         } ${open ? 'bg-card' : 'bg-primary/[.90]'}`}
       >
-        <SiJavascript className="fill-secondary" size={48} />
+        <Logo size={48} />
         <div aria-label="menu" className="md:hidden">
           <Hamburger toggled={open} toggle={setOpen} color="#F05454" />
         </div>
